@@ -1,0 +1,266 @@
+html {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+
+body {
+  margin: 0 auto;
+  color: white;
+}
+
+:root{
+    /* identity */
+    --clr-Primary:#DC0A2D;
+    
+    /* Tipos de Pokemon */
+    --clr-Bug:#A7B723;
+    --clr-Dark:#7557AC;
+    --clr-Dragon:#7037FF;
+    --clr-Electric:#F9CF30;
+    --clr-Fairy:#E69EAC;
+    --clr-Fighting:#C12239;
+    --clr-Fire:#F57D31;
+    --clr-Flying:#A891EC;
+    --clr-Ghost: #70559B;
+    --clr-Normal:#AAA67F;
+    --clr-Grass: #74CB48;
+    --clr-Ground: #DEC16B;
+    --clr-Ice: #9AD6DF;
+    --clr-Posion: #A43E9E;
+    --clr-Psychic: #FB5584;
+    --clr-Rock: #B69E31;
+    --clr-Steel: #B7B9D0;
+    --clr-Water: #6493EB;
+
+    /* Tipos de Color de fuente */
+
+    --clr-font-dark-gray: #212121;
+    --clr-font-medium-gray: #666666;
+    --clr-font-light-gray: #e0e0e0;
+    --clr-font-white: #FFFFFF;
+    --clr-background: #f7f7f7;
+    }
+
+
+
+.web-container {
+    width: 1440px;
+    height: auto;
+    background-color: var(--clr-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-container {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.logo-container h1 {
+    color: var(--clr-font-dark-gray);
+}
+
+.logo-container img {
+    width: 60px;
+    padding-right: 15px;
+}
+
+
+.header-background-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(/public/poke.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+.search-container {
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-container{
+    width: 100%;
+    height: 90px;
+    background-color: #dc0a2d1f;
+}
+
+.pikachu-run-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-container {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: end;
+}
+
+.current-filter{
+    width: 300px;
+    height: 35px;
+    border: none;
+    background-color: #212121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container-nav {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: start
+}
+
+.search-container-nav input {
+    width: 60%;
+    height: 35px;
+    border: 1px solid var(--clr-font-medium-gray);
+    border: none;
+    text-align: center;
+}
+
+.search-container-nav input:focus {
+    outline: none;
+}
+
+
+.search-container-nav input::placeholder {
+text-align: center;
+}
+
+.elements-filter-container{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numeric-sort-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.numeric-sort-container img{
+    width: 30px
+}
+
+.select-container{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-container select{
+width: 80%;
+}
+
+.alphabetic-sort-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.alphabetic-sort-container img{
+    width: 30px
+}
+
+
+.type-pk-container{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-filter-container{
+    width: 70%;
+    height: auto;
+    background-color: #e81b0912;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+    gap: 10px;
+}
+
+.card-1{
+    width: 100px;
+    height: 100px;
+    background-color: #FB5584;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.tittle-class{
+    width: 100%;
+    height: 30px;
+    background-color: #769b55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 230px;
+    background-color: #70559B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-info-container{
+    width: 100%;
+    height: 30%;
+    background-color: #200c65;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
